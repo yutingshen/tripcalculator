@@ -15,6 +15,13 @@ public class CalculatorUtils {
     private static final String interchangeJSON = "./resources/interchanges.json";
     private static final String ratesJSON = "./resources/interchanges.json";
 
+    /**
+     * Returns distance between two interchanges
+     * @param start start interchange
+     * @param destination end interchange
+     * @return
+     * @throws IOException
+     */
     public static double getTotalDistance(String start, String destination) throws IOException {
         double distance = 0;
         if (start.equals(destination)) {
@@ -39,15 +46,6 @@ public class CalculatorUtils {
             return distance;
         }
     }
-
-    public static void getTotalDistance(String vehicle, String start, String destination){
-//        if (startId < destId) {
-//            for
-//        } else {
-//
-//        }
-    }
-
 
     /**
      * Convert JSON file to map for faster searching
